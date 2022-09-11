@@ -1,0 +1,70 @@
+
+
+
+ body{
+    margin: 0;
+   padding: 0;
+   }
+   div{
+     padding: 0;
+     margin: 0;
+   }
+   
+   #logoAutomatica{
+   width:90px ;
+   height:60px;
+   border-radius: 50%;
+   image-resolution: 100%;
+   margin: 3px;
+   }
+   #jumbotrom{
+   background-image: url(../img/panelJumbotrom.jpg);
+   background-repeat: no-repeat;
+   background-origin: border-box;
+   background-size: cover;   
+   height: 700px;
+   
+  }
+  .target{
+   height:250px;
+  }
+  .boton{
+    font-size:xx-large;
+    /*font-weight: bold;*/
+    color:gray;
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: none ;  
+   
+  }
+  .botonMarcado{
+   color:#0f5132;
+   background-color: #badbcc;
+   border:none;
+   border-top-right-radius: 15px;
+   border-top-left-radius: 15px;
+     margin: 0;
+  }
+  .panel{
+   background-color:#badbcc;
+    border-radius:15px;
+    padding-top: 20px;
+    padding-bottom: 10px; 
+   
+ }
+ .panelOculto{
+   display:none ;
+    
+ }
+ #botonGroup{
+   margin: 0 auto;
+    width:10%;
+ }
+ .line{
+   margin: 5px auto;
+   color: white;
+   animation: alternate;
+   width:98%;
+ }

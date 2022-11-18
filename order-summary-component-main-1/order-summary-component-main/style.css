@@ -1,0 +1,126 @@
+:root{
+    --Pale_blue:hsl(225, 100%, 94%);
+    --Bright_blue:hsl(245, 75%, 52%);
+    --Very_pale_blue:hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+    --white:white;
+    --grey:grey;
+    --violet:#746cf3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+*/
+body{
+   background-color:var(--Pale_blue) ;
+   background-image: url('images/pattern-background-mobile.svg');
+   background-repeat: no-repeat;
+   background-size: 100% 300px;
+   font-family: 'Red Hat Disolay',sans-serif ;
+
+}
+
+main{
+    width: 370px;
+    background-color: var(--Very_pale_blue);
+    margin:65px auto ;
+    border-radius: 16px;
+   text-align: center;
+
+   
+}
+.image{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+   
+}
+.order_summary{
+    margin:35px 0 25px 0;
+    font-weight: 900;
+    color: var(--Dark_blue);
+}
+.paragraph{
+    font-size: 16px;
+    width: 75%;
+    margin: auto;
+    color: var(--grey);   
+}
+.choice_container{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    margin:20px auto 50px ;
+    align-items: center;
+}
+.choice_container_option{
+    margin:  0 50px 0 20px;
+    height: 90%;
+    padding: 5px;
+       
+}
+.choice_container_option_plan{
+    font-size: 0.9em;
+    font-weight: 700;
+    color: var(--Dark_blue);  
+    margin-bottom: 5px; 
+}
+.choice_container_option_price{
+    font-size: 0.9em;
+    color: var(--grey);    
+}
+.choice_container_option_change{
+    font-size: 0.8em;
+    font-weight: 900;
+}
+.choice_container_option_change:hover{
+    text-decoration: none;
+    color: var(--violet);
+}
+.container_button{
+    display:grid;
+    grid-template-columns: 1fr;
+    
+}
+.payment_button{
+    font-size: 0.95em;
+    font-weight: 700;
+    border-radius: 16px;
+    padding: 15px 90px;
+    box-shadow:0 10px 10px var(--grey);
+    background-color: var(--Bright_blue);
+    color: var(--Very_pale_blue);
+    margin: 10px auto ;
+}
+.payment_button:hover{
+    cursor: pointer;
+    background-color: var(--violet);
+}
+.cancel_order_button{
+    margin: 15px 0 40px 0;
+    color: var(--grey);
+    font-size: 0.95em;
+}
+.cancel_order_button:hover{
+    cursor:pointer;
+}
+@media(min-width:1440px){
+    body{
+        background-image: url('images/pattern-background-desktop.svg');
+    }
+    .paragraph{
+        width: 80%;
+    }
+}
+.footer{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
